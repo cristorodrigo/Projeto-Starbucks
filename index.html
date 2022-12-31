@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;900&display=swap" rel="stylesheet">
+
+    <title>Starbucks</title>
+</head>
+
+<body>
+    <div class="circulo"></div>
+
+    <div>
+        <img src="./assets/logo.png" alt="image logo" class="img-logo">
+    </div>
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2>It`s not just coffee <br>
+                It`s <span>Starbucks</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, voluptates debitis unde eaque doloremque
+                quod vitae autem optio nam labore in eius iusto vero culpa dolorem fuga aspernatur fugit? Est.</p>
+            <button>Learn more</button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./assets/img1.png" class="Starbucks">
+        </div>
+    </div>
+
+
+
+    <div class="menu-cup">
+        <img src="./assets/thumb1.png" class="cups" onclick="trocaImagem('./assets/img1.png'); trocaCor('#017143')">
+        <img src="./assets/thumb2.png" class="cups" onclick="trocaImagem('./assets/img2.png'); trocaCor('#eb7495')">
+        <img src="./assets/thumb3.png" class="cups" onclick="trocaImagem('./assets/img3.png'); trocaCor('#d752b1')">
+    </div>
+
+
+
+</body>
+
+<script>
+    let images = document.querySelector(".Starbucks")
+    let circulo = document.querySelector(".circulo")
+
+
+    function trocaImagem(endereco) {
+        images.src = endereco
+    }
+
+    function trocaCor(cor) {
+        circulo.style.background = cor
+    }
+
+</script>
+
+</html>
